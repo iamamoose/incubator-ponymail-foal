@@ -175,7 +175,7 @@ def defuzz(formdata: dict, nodate: bool = False, list_override: typing.Optional[
                             "should": [
                                 {
                                     "multi_match": {
-                                        "fields": ["from", "body", "subject"],
+                                        "fields": ["from", "body", "subject", "attachmenttext"],
                                         "query": x,
                                         "type": "phrase",
                                     },
